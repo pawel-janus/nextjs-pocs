@@ -21,8 +21,6 @@ Simple weather application demonstrating Server-Side Rendering (SSR) with Next.j
 
 `TypeScript` `Next.js 16` `React 19` `Tailwind v4` `Cloud Run` `Docker`
 
-**Production:** https://nextjs-ssr-basics-216135873902.europe-central2.run.app
-
 ---
 
 ### [nextjs-interactive-weather](https://github.com/pawel-janus/nextjs-interactive-weather)
@@ -32,8 +30,6 @@ Weather application demonstrating Client Components, API Routes, and client-side
 **Patterns:** Client Components ('use client') · useState/useEffect · API Routes (GET/POST) · useRouter · useSearchParams · Zod validation · in-memory state
 
 `TypeScript` `Next.js 16` `React 19` `Zod` `Cloud Run`
-
-**Production:** https://nextjs-interactive-weather-216135873902.europe-central2.run.app
 
 ---
 
@@ -45,8 +41,6 @@ Weather application demonstrating dynamic routes, loading states, error boundari
 
 `TypeScript` `Next.js 16` `React 19` `Zod` `Cloud Run`
 
-**Production:** https://nextjs-dynamic-routes-216135873902.europe-central2.run.app
-
 ---
 
 ### [nextjs-server-actions](https://github.com/pawel-janus/nextjs-server-actions)
@@ -56,8 +50,6 @@ Weather application demonstrating Server Actions and progressive enhancement. Re
 **Patterns:** Server Actions ('use server') · useActionState (React 19) · useFormStatus · progressive enhancement · FormData handling · no API route boilerplate
 
 `TypeScript` `Next.js 16` `React 19` `Cloud Run`
-
-**Production:** https://nextjs-server-actions-216135873902.europe-central2.run.app
 
 ---
 
@@ -69,8 +61,6 @@ Weather application demonstrating Incremental Static Regeneration (ISR), Static 
 
 `TypeScript` `Next.js 16` `React 19` `Cloud Run`
 
-**Production:** https://nextjs-isr-ssg-216135873902.europe-central2.run.app
-
 ---
 
 ### [nextjs-route-groups](https://github.com/pawel-janus/nextjs-route-groups)
@@ -80,8 +70,6 @@ Weather application demonstrating Route Groups, different layouts per section, c
 **Patterns:** Route Groups (`(folder)`) · per-group layouts · nested layouts · code organization without URL impact · shared loading/error states per group
 
 `TypeScript` `Next.js 16` `React 19` `Cloud Run`
-
-**Production:** https://nextjs-route-groups-216135873902.europe-central2.run.app
 
 ---
 
