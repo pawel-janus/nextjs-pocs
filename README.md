@@ -73,9 +73,11 @@ Weather application demonstrating Route Groups, different layouts per section, c
 
 ---
 
-### nextjs-optimizations *(next)*
+### nextjs-optimizations *(skipped)*
 
-Weather application demonstrating image optimization, script loading strategies, bundle analysis, and Edge Runtime. Replace `<img>` with `next/image`, analyze bundle size, convert API route to Edge Runtime for faster cold starts.
+Weather application demonstrating image optimization, script loading strategies, bundle analysis, and Edge Runtime.
+
+*Skipped: Low priority for learning — patterns well-documented in Next.js docs, can reference when needed. Focus on auth and database integration instead.*
 
 **Patterns:** next/image (lazy loading, WebP) · next/script (analytics) · @next/bundle-analyzer · Edge Runtime · streaming responses
 
@@ -83,9 +85,11 @@ Weather application demonstrating image optimization, script loading strategies,
 
 ---
 
-### nextjs-advanced-routing *(planned)*
+### nextjs-advanced-routing *(skipped)*
 
-Weather application demonstrating Parallel Routes and Intercepting Routes. Multiple independent sections in layout (weather + forecast load independently), modal URLs for photo overlays (shareable modal state).
+Weather application demonstrating Parallel Routes and Intercepting Routes.
+
+*Skipped: Niche patterns rarely used in practice — focus on more common production patterns (auth, database) instead.*
 
 **Patterns:** Parallel Routes (`@folder`) · Intercepting Routes (`(.)folder`) · modal in URL · soft vs hard navigation · complex dashboards
 
@@ -93,23 +97,33 @@ Weather application demonstrating Parallel Routes and Intercepting Routes. Multi
 
 ---
 
-### nextjs-auth-middleware *(planned)*
+### nextjs-auth-middleware *(next)*
 
 Weather application demonstrating NextAuth.js integration, middleware for protected routes, OAuth providers, and session management. Google OAuth login, protected `/dashboard`, public `/weather/[city]`.
 
-**Patterns:** NextAuth.js · middleware.ts (route protection) · OAuth (Google) · session management · role-based access · rewrites/redirects
+**Patterns:** NextAuth.js · middleware.ts (route protection) · OAuth (Google) · session management · protected routes · JWT tokens
 
 `TypeScript` `Next.js 16` `React 19` `NextAuth` `Cloud Run`
 
 ---
 
-### nextjs-database *(planned)*
+### nextjs-weather-db *(planned)*
 
-Weather application demonstrating Firestore integration, Server Components with database queries, Server Actions for mutations, and cache invalidation. Persistent recent searches and user favorites. Integrates Firestore patterns from GCP POC #1.
+Weather application demonstrating Firestore integration, Server Components with database queries, Server Actions for mutations, and optimistic updates. Persistent recent searches and user favorites per authenticated user. Integrates Firestore patterns from GCP POC #1.
 
-**Patterns:** Firestore integration · Server Components + DB queries · Server Actions + mutations · revalidateTag/revalidatePath · optimistic updates (useOptimistic)
+**Patterns:** Firestore integration · Server Components + DB queries · Server Actions + mutations · revalidatePath · optimistic updates (useOptimistic) · user-specific data
 
-`TypeScript` `Next.js 16` `React 19` `Firestore` `Cloud Run`
+`TypeScript` `Next.js 16` `React 19` `Firestore` `NextAuth` `Cloud Run`
+
+---
+
+### nextjs-multi-provider-auth *(planned)*
+
+Weather application demonstrating multi-provider OAuth (Google, GitHub, Facebook) with provider-specific data and business logic. Provider info saved to Firestore, different feature limits per provider (GitHub: unlimited favorites, others: max 5).
+
+**Patterns:** Multi-provider OAuth · Provider-specific data persistence · Provider-based business logic · Account linking · Different avatars per provider
+
+`TypeScript` `Next.js 16` `React 19` `Firestore` `NextAuth` `Cloud Run`
 
 ---
 
