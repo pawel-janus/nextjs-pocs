@@ -97,11 +97,11 @@ Weather application demonstrating Parallel Routes and Intercepting Routes.
 
 ---
 
-### nextjs-auth-middleware *(next)*
+### [nextjs-auth-middleware](https://github.com/pawel-janus/nextjs-auth-middleware)
 
-Weather application demonstrating NextAuth.js integration, middleware for protected routes, OAuth providers, and session management. Google OAuth login, protected `/dashboard`, public `/weather/[city]`.
+Weather application demonstrating NextAuth.js v5, Google OAuth, middleware-based route protection, httpOnly cookie sessions, and Server Actions. Full page redirect OAuth flow, protected `/dashboard`, public `/weather/[city]`.
 
-**Patterns:** NextAuth.js · middleware.ts (route protection) · OAuth (Google) · session management · protected routes · JWT tokens
+**Patterns:** NextAuth.js v5 · middleware.ts (route protection) · OAuth 2.0 (Google) · httpOnly cookies · session management · protected routes · Server Actions (signIn/signOut)
 
 `TypeScript` `Next.js 16` `React 19` `NextAuth` `Cloud Run`
 
