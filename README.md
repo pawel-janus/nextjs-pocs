@@ -1,5 +1,8 @@
 # Next.js — Reference Implementations
 
+> [!IMPORTANT]
+> **Showcase samples only.** The projects listed below are small demonstration samples built to illustrate patterns and techniques. They are not the code I work on professionally. That code is proprietary to my employer and cannot be disclosed.
+
 TypeScript fullstack developer learning modern Next.js patterns through deliberate practice. These repositories explore Next.js 16 App Router features progressively — each POC forks the previous one and adds 1-2 new concepts.
 
 They are proof-of-concept implementations built for learning and portfolio, not production systems. The goal is to understand each pattern in isolation and have working references.
